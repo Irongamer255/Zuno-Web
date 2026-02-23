@@ -351,6 +351,18 @@
         });
       }}
 />
+  <script>
+  (function() {
+    const script = document.createElement('script');
+    script.src = 'https://assistloop.ai/assistloop-widget.js';
+    script.onload = function() {
+      AssistLoopWidget.init({
+        agentId: "d2c53315-be8c-4778-af9c-73817f973023" 
+      });
+    };
+    document.head.appendChild(script);
+  })();
+</script>
   <script type="module" src="/src/main.js"></script>
 </body>
 
